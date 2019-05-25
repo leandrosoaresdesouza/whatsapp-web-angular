@@ -1,3 +1,45 @@
-<p>
-  header-list works!
-</p>
+<header>
+  <div class="info-left">
+    <div class="wrapper-img-profile">
+      <img src="../../../assets/profile.png" alt="" class="img-profile">
+      <div class="default-user">
+        <!-- <img src="" alt=""> -->
+      </div>
+    </div>
+  </div>
+  <div class="info-right">
+    <div class="wrapper-icons">
+      <div class="icon">
+        <i>i</i>
+      </div>
+      <div class="icon">
+        <i>i</i>
+      </div>
+      <div class="icon">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item>
+            <span>New group</span>
+          </button>
+          <button mat-menu-item disabled>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+            <span>Archived</span>
+          </button>
+          <button mat-menu-item>
+            <span>Starred</span>
+          </button>
+          <button mat-menu-item>
+            <span>Settings</span>
+          </button>
+          <button mat-menu-item>
+            <span>Log out</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</header>
