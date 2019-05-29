@@ -1,0 +1,72 @@
+.chat-background {
+  background-image: url("../../../assets/chat-background.png");
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+footer {
+  background-color: #efefef;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+  min-height: 62px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+
+  .message {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 49px;
+    position: relative;
+    flex: 1;
+  }
+
+  .wrapper-input {
+    height: 35px;
+    background-color: #fff;
+    border-radius: 18px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .input-message {
+    border: 0;
+    height: 97%;
+    width: 100%;
+    outline: none;
+    padding-right: 15px;
+    font-size: 15px;
+    flex: 1 1 auto;
+    padding: 5px 10px;
+    border-radius: 18px;
+
+  }
+
+  .icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .icon-arrow-back {
+    color: #4fc3f7;
+    position: absolute;
+    left: 25px;
+    font-size: 23px;
+  }
+
+  .icon-close {
+    color: #263238;
+    opacity: 0.3;
+    position: absolute;
+    right: 25px;
+  }
+}

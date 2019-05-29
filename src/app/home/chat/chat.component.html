@@ -1,3 +1,21 @@
-<p>
-  chat works!
-</p>
+<div class="chat-background"></div>
+<div class="chat">
+
+</div>
+<footer>
+  <button mat-icon-button title="Search...">
+    <mat-icon>search</mat-icon>
+  </button>
+  <div class="message" [ngClass]="{'bg-white': isFocus}">
+    <label class="wrapper-input">
+      <input type="text" title="Type a message" placeholder="Type a message" (focus)="messageFocus()" (focusout)="messageFocusOut()"
+        [(ngModel)]="message" class="input-message">
+    </label>
+    <div class="loading" *ngIf="isLoading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</footer>

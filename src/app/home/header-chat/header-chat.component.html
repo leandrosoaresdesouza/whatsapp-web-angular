@@ -1,3 +1,63 @@
-<p>
-  header-chat works!
-</p>
+<header>
+  <div class="info-left">
+    <div class="wrapper-img-profile">
+      <img src="../../../assets/leticia.jpeg" alt="" class="img-profile">
+      <div class="default-user">
+        <!-- <img src="" alt=""> -->
+      </div>
+    </div>
+  </div>
+  <div class="info-middle">
+    <div class="text-top">
+      <div class="wrapper-title" title="Leticia Soares">
+        <span class="title">Leticia Soares</span>
+      </div>
+    </div>
+    <div class="text-down">
+      <!-- <div class="wrapper-contacts" title=">Alan, Alvecy, Andre, Bruno, Camila, Jair, Leticia, Maria, Mariana, Marlene, Milta, Pai,
+          Pedro, Rosalia, Roseli, Samuel, Vitoria Pedrin, You">
+        <span class="contacts">Alan, Alvecy, Andre, Bruno, Camila, Jair, Leticia, Maria, Mariana, Marlene, Milta, Pai,
+          Pedro, Rosalia, Roseli, Samuel, Vitoria Pedrin, You</span>
+      </div> -->
+      <div class="wrapper-status" title="online">
+        <span class="status">online</span>
+      </div>
+    </div>
+  </div>
+  <div class="info-right">
+    <div class="wrapper-icons">
+      <div class="icon">
+        <button mat-icon-button title="Search...">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <div class="icon">
+        <button mat-icon-button title="Attach">
+          <mat-icon>attach_file</mat-icon>
+        </button>
+      </div>
+      <div class="icon">
+        <button mat-icon-button [matMenuTriggerFor]="menu" title="Menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item>
+            <span>Contact info</span>
+          </button>
+          <button mat-menu-item disabled>
+            <span>Select messages</span>
+          </button>
+          <button mat-menu-item>
+            <span>Mute</span>
+          </button>
+          <button mat-menu-item>
+            <span>Clear messages</span>
+          </button>
+          <button mat-menu-item>
+            <span>Delete chat</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</header>
