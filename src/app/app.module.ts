@@ -11,6 +11,7 @@ import { FriendListComponent } from './home/friend-list/friend-list.component';
 import { HeaderListComponent } from './home/header-list/header-list.component';
 import { HeaderChatComponent } from './home/header-chat/header-chat.component';
 import { ChatComponent } from './home/chat/chat.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ChatComponent } from './home/chat/chat.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgMaterialModule
+    NgMaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

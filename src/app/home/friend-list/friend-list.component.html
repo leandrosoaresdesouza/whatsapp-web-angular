@@ -1,3 +1,93 @@
-<p>
-  friend-list works!
-</p>
+<div class="friend-list">
+  <div class="items">
+    <div class="item active">
+      <div class="wrapper-img">
+        <div class="img-content">
+          <img src="../../../assets/profile.png" alt="eu">
+        </div>
+      </div>
+      <div class="wrapper-text">
+        <div class="text-top">
+          <div class="wrapper-title" title="Familia Soares">
+            <span class="title">Familia Soares</span>
+          </div>
+          <span class="wrapper-last-hour">
+            <span class="hour">10:49</span>
+          </span>
+        </div>
+        <div class="text-down">
+          <div class="wrapper-message" title="Parabéns tio André. Muito sucesso e saúde">
+            <span class="name">Pedro:</span>
+            <span class="message">Parabéns tio André. Muito sucesso e saúde</span>
+          </div>
+          <div class="wrapper-notifications">
+            <span class="notification">2</span>
+            <mat-icon class="icon-arrow-down" [matMenuTriggerFor]="menu">expand_more</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="wrapper-img">
+        <div class="img-content">
+          <img src="../../../assets/profile.png" alt="eu">
+        </div>
+      </div>
+      <div class="wrapper-text">
+        <div class="text-top">
+          <div class="wrapper-title" title="Familia Soares">
+            <span class="title">Familia Soares</span>
+          </div>
+          <span class="wrapper-last-hour">
+            <span class="hour">10:49</span>
+          </span>
+        </div>
+        <div class="text-down">
+          <div class="wrapper-message" title="Parabéns tio André. Muito sucesso e saúde">
+            <span class="name">Pedro:</span>
+            <span class="message">Parabéns tio André. Muito sucesso e saúde</span>
+          </div>
+          <div class="wrapper-notifications">
+            <span class="notification">2</span>
+            <mat-icon class="icon-arrow-down" [matMenuTriggerFor]="menu">expand_more</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="wrapper-img">
+        <div class="img-content">
+          <img src="../../../assets/profile.png" alt="eu">
+        </div>
+      </div>
+      <div class="wrapper-text">
+        <div class="text-top">
+          <div class="wrapper-title" title="Familia Soares">
+            <span class="title">Familia Soares</span>
+          </div>
+          <span class="wrapper-last-hour">
+            <span class="hour">10:49</span>
+          </span>
+        </div>
+        <div class="text-down">
+          <div class="wrapper-message" title="Parabéns tio André. Muito sucesso e saúde">
+            <span class="name">Pedro:</span>
+            <span class="message">Parabéns tio André. Muito sucesso e saúde</span>
+          </div>
+          <div class="wrapper-notifications">
+            <span class="notification">2</span>
+            <mat-icon class="icon-arrow-down" [matMenuTriggerFor]="menu">expand_more</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Archive Chat</button>
+  <button mat-menu-item>Mute</button>
+  <button mat-menu-item>Exit group</button>
+  <button mat-menu-item>Pin chat</button>
+  <button mat-menu-item>Mark as unread</button>
+</mat-menu>

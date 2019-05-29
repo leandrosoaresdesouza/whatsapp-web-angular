@@ -1,10 +1,15 @@
-<div class="search">
-  <!-- <div class="button">
-    <button mat-icon-button>
-    <mat-icon>search</mat-icon>
-  </button>
-  </div> -->
-  <label class="x">
-    <input type="text" title="Search">
+<div class="search" [ngClass]="{'bg-white': isFocus}">
+  <mat-icon class="icon icon-arrow-back" *ngIf="isFocus">arrow_back</mat-icon>
+  <mat-icon class="icon icon-search" *ngIf="!isFocus">search</mat-icon>
+  <label class="wrapper-input">
+    <input type="text" title="Search" placeholder="Search or start new chat" (focus)="searchFocus()" (focusout)="searchFocusOut()"
+      [(ngModel)]="search" class="input-search" title="Search or start a new chat">
   </label>
+  <div class="loading" *ngIf="isLoading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <mat-icon class="icon icon-close" (click)="clearSearch()" *ngIf="!search==''">close</mat-icon>
 </div>

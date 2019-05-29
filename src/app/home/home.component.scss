@@ -7,7 +7,7 @@
 
   @media screen and (min-width: 1441px) {
     &:after {
-      content: '';
+      content: "";
       background-color: #009688;
       height: 127px;
       position: fixed;
@@ -26,7 +26,7 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  
+
   @media screen and (min-width: 1441px) {
     height: calc(100% - 38px);
     top: 19px;
@@ -41,4 +41,12 @@
   top: 0;
   height: 100%;
   width: 30%;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
 }

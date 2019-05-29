@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendSearchComponent implements OnInit {
 
+  search = '';
+  isFocus = false;
+  isLoading = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  clearSearch() {
+    this.search = '';
+  }
+
+  searchFocus() {
+    this.isFocus = true;
+  }
+
+  searchFocusOut() {
+    this.isFocus = false;
   }
 
 }

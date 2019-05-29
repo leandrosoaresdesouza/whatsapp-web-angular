@@ -49,13 +49,13 @@ header {
 
   .icon {
     border-radius: 50%;
-    padding: 8px;
-    margin-left: 10px;
+    color: #263238a1;
+    padding: 8px 5px;
 
     &:first-child {
       margin-left: 0;
     }
-  
+
     i {
       cursor: pointer;
     }
